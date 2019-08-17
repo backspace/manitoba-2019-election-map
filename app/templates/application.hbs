@@ -8,5 +8,10 @@
   </LeafletMap>
 </div>
 
+<svg>
+  {{#each this.patternIds as |patternId|}}
+    <Pattern @patternId={{patternId}} />
+  {{/each}}
+</svg>
 {{outlet}}
 

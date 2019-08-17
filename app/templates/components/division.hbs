@@ -1,9 +1,9 @@
-<@layers.geoJSON @geoJSON={{@feature}} as |layer|>
+<@layers.geoJSON @geoJSON={{@feature}} @fillColor="url(#{{this.partiesFill}})" as |layer|>
   <layer.popup>
     <strong>{{@feature.properties.ED}}</strong>
     <br>
     <br>
-    {{#each this.candidates as |candidate|}}
+    {{#each this.candidateNames as |candidate|}}
       {{candidate}}<br>
     {{/each}}
   </layer.popup>

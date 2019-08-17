@@ -6,6 +6,14 @@ export default class DivisionComponent extends Component {
     let divisionName = this.args.feature.properties.ED;
     let divisionCandidates = candidates[divisionName];
 
-    return Object.values(divisionCandidates);
+    return divisionCandidates;
+  }
+
+  get candidateNames() {
+    return Object.values(this.candidates);
+  }
+
+  get partiesFill() {
+    return Object.keys(this.candidates).map(party => party[0]).sort().join('');
   }
 }

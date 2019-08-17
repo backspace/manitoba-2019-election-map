@@ -1,0 +1,10 @@
+<pattern id={{@patternId}} width={{this.width}} height={{this.width}} patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+  {{#each this.lines as |lineProperties|}}
+    <line
+      x1={{lineProperties.xOffset}}
+      y1="0"
+      x2={{lineProperties.xOffset}}
+      y2={{this.width}}
+      style="stroke: {{lineProperties.colour}}; stroke-width: {{this.lineWidth}}" />
+  {{/each}}
+</pattern>

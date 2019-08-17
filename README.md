@@ -1,7 +1,8 @@
 # manitoba-2019-election-map
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This combines [scraped candidate information](https://electionsmanitoba.ca/en/Voting/Candidates/1) with [processed shapefiles](https://electionsmanitoba.ca/en/Resources/Maps) to show which parties and candidates are running in which electoral districts in Manitoba’s 2019 election.
+
+Down with the conservatives! But down with colonialism, really.
 
 ## Prerequisites
 

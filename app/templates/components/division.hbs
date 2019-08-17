@@ -1,4 +1,4 @@
-<@layers.geoJSON @geoJSON={{@feature}} @fillColor="url(#{{this.partiesFill}})" as |layer|>
+<@layers.geoJSON @geoJSON={{@feature}} @fillColor="url(#{{this.partiesFill}})" @fillOpacity="0.33" as |layer|>
   <layer.popup>
     <strong>{{@feature.properties.ED}}</strong>
     <br>

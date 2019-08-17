@@ -3,8 +3,8 @@
     <strong>{{@feature.properties.ED}}</strong>
     <br>
     <br>
-    {{#each this.candidateNames as |candidate|}}
-      {{candidate}}<br>
-    {{/each}}
+    {{#each-in this.candidates as |party name|}}
+      {{party}}: {{name}}<br>
+    {{/each-in}}
   </layer.popup>
 </@layers.geoJSON>

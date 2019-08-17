@@ -1,3 +1,10 @@
 <@layers.geoJSON @geoJSON={{@feature}} as |layer|>
-  <layer.popup>{{@feature.properties.ED}}</layer.popup>
+  <layer.popup>
+    <strong>{{@feature.properties.ED}}</strong>
+    <br>
+    <br>
+    {{#each this.candidates as |candidate|}}
+      {{candidate}}<br>
+    {{/each}}
+  </layer.popup>
 </@layers.geoJSON>

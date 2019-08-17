@@ -3,7 +3,7 @@
     <layers.tile @url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"/>
 
     {{#each this.model.features as |feature|}}
-      <layers.geoJSON @geoJSON={{feature}} />
+      <Division @layers={{layers}} @feature={{feature}} />
     {{/each}}
   </LeafletMap>
 </div>

@@ -19,7 +19,7 @@ export default class PatternComponent extends Component {
   get lines() {
     return this.args.patternId.split('').map((initial, index) => {
       return {
-        xOffset: index * this.lineWidth,
+        xOffset: index * this.lineWidth + this.lineWidth/2,
         colour: initialToColour[initial],
       };
     });
